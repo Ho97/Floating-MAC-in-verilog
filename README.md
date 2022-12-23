@@ -26,7 +26,7 @@ At this time, I used the simple rounding algorithm. If the below one of the last
 
 
 ## 4. Upgrade for Perfoemance
-<img src="https://user-images.githubusercontent.com/120174812/209347579-d5fdd7dc-752e-484e-9c54-ede63938f8ee.png" width="40%" height="40%" title="fp_mac" alt="fp_mac"></img>
+<img src="https://user-images.githubusercontent.com/120174812/209347579-d5fdd7dc-752e-484e-9c54-ede63938f8ee.png" width="40%" height="40%" title="fp_mac" alt="fp_mac"></img>   
 At the first time I just made the fp_mac with simple shift and add multiplier and RCA to test the architecture. There was not much pipelines for the smaller critical path delay. After testing the architecture, I implemented array multiplier and KS adder with pipelining. That was the Ver3.1. But I figured out that there were too many pipelines in this code so that there are too much slacks. So I tried to merge some small modules. At the Ver5, not only merging the modules in adder or multiplier, I connected the adder and multiplier. So reduced the steps from 26 to 5 but there was no increment of critical path delay. In fact, the critical path delay is reduced! Also the power consumption was reduce to about 27% of the Ver3.1.
 
 
