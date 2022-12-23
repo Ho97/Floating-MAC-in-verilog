@@ -95,7 +95,7 @@ module fp_mac(CLK, RESETn, A, B, C, Y);
 	
 	
 	// STEP 4 //////////////////////////////////
-	//Kogge Stone Adder ÇÑ ½ºÅÜ¿¡ ÁøÇà >> firstone detection±îÁö
+	//Kogge Stone Adder í•œ ìŠ¤í…ì— ì§„í–‰ >> firstone detectionê¹Œì§€
 	//in  - input1, input2, ov_yn
 	//out - sum, overflow, count
 	//transfer - add_out_sign, add_current_ex
@@ -112,7 +112,7 @@ module fp_mac(CLK, RESETn, A, B, C, Y);
 	
 	
 	// STEP 5 /////////////////////////////////
-	//normalize¿Í Round(+normalize) ÁøÇà
+	//normalizeì™€ Round(+normalize) ì§„í–‰
 	//in  - out_sign, current_ex, sum, overflow, count
 	//out - out_sign, out_ex, out_sg
 	
